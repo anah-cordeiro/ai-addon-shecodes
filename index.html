@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css">
+    <title>Recipe Generator</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+          <h1>Recipe Generator</h1>
+        </header>
+  
+        <main>
+          <div class="form-container">
+            <form id="recipe-generator-form">
+              <input
+                type="text"
+                placeholder="Look up for recipes here"
+                autofocus
+                required
+                autocomplete="off"
+                class="instructions"
+                id="user-instructions"
+              />
+              <input type="submit" class="submit-button" />
+            </form>
+            <div class="hint">E.g.: Lasagna, Ramen, Caldo Verde or Cheese</div>
+          </div>
+          <div class="recipe hidden" id="recipe"></div>
+        </main>
+  
+        <footer>
+          This AI project was coded by
+          <a href="" target="_blank">Ana Cordeiro</a>
+          and is
+          <a
+            href=""
+            target="_blank"
+          >
+            open-sourced on GitHub</a
+          >
+          and is
+          <a href="" target="_blank"
+            >hosted on Netlify</a
+          >.
+        </footer>
+      </div>
+<script src="src/app.js"></script>
+</body>
+</html>
